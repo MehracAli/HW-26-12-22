@@ -3,74 +3,209 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(255, 255, 255);
+}
+.bg{
+    position:absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.25s;
+    pointer-events: none;
+    border-radius: 0px!important;
+}
 .row{
-    height: 300px;
+    height: 500px;
+    font-family:sans-serif;
 }
 .row .head{
-    height: 20%;
+    height: 100px;
     padding: 10px;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 .row .body{
+    position: relative;
     height: 80%;
     line-height: 25px;
-    background-size: cover;
-    background-attachment: fixed;
-    padding:10px 0px;
+    padding:25px 0px;
 }
 .head h1{
-    font-size: 40px;
+    font-size: 70px;
 }
 .body ul{
     width: 200px;
     background-color: rgba(0, 0, 0, 0.4);
+    color: white;
     border-radius: 20px;
     padding: 10px;
     margin-left: 50px;
-    margin-top: 40px;
+}
+.body ul:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
 }
 .body li{
     font-size: 20px;
-    display: block;
-    color: white;
+    list-style: none;
+    text-align: left;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.body li:hover{
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
     text-align: center;
+    padding-left: 10px;
 }
 .A.row .head{
     background-color: #13254b;
     color: white;
 }
-.A.row .body{
-    background-image: url(https://wallpapercave.com/wp/wp4428308.jpg);
-}
 .B.row .head{
     background-color: #cbc90f;
     color: black;
-}
-.B.row .body{
-    background-image: url(https://wallpapercave.com/wp/wp2359201.jpg);
 }
 .C.row .head{
     background-color: #590002;
     color: white;
 }
-.C.row .body{
-    background-image: url(https://wallpapercave.com/wp/wp1864145.jpg);
-}
 .D.row .head{
-    background-color: white;
-    color: black;
-}
-.D.row .body{
-    background-image: url(https://wallpapercave.com/wp/wp4209379.jpg);
+    background-color: rgb(0, 95, 43);
+    color: rgb(255, 255, 255);
 }
 .E.row .head{
     background-color: #0d317a;
     color: white;
 }
-.E.row .body{
-    background-image: url(https://wallpapercave.com/dwp2x/wp9950561.jpg);
-}
 .empty-place{
-    height: 510px;
+    height: 450px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+/* a */
+.A.row .body li:first-child:hover ~ .bg{
+    background-image: url(https://wallpapercave.com/wp/wp3594884.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.A.row .body li:nth-child(2):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/2986234.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.A.row .body li:nth-child(3):hover ~ .bg{
+    background-image: url(https://wallpapercave.com/wp/wp1878492.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.A.row .body li:nth-child(4):hover ~ .bg{
+    background-image: url(https://wallpapercave.com/wp/wp1860692.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.A.row .body li:nth-child(5):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/156788.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* b */
+.B.row .body li:first-child:hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/134424.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.B.row .body li:nth-child(2):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/4695093.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.B.row .body li:nth-child(3):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/211643.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.B.row .body li:nth-child(4):hover ~ .bg{
+    background-image: url(https://static.nationalgeographic.co.uk/files/styles/image_3200/public/ngts_web_st_likealocal_awl_bul0430_hr.webp?w=1450&h=816);
+    background-size: cover;
+    background-position: center;
+}
+.B.row .body li:nth-child(5):hover ~ .bg{
+    background-image: url(https://wallpapercave.com/wp/wp2307427.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* c */
+.C.row .body li:first-child:hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/1728683.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.C.row .body li:nth-child(2):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/5182062.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.C.row .body li:nth-child(3):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/2073597.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.C.row .body li:nth-child(4):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/41223.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.C.row .body li:nth-child(5):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/1403555.jpg);
+    background-size: cover;
+    background-position: top;
+}
+/* d */
+.D.row .body li:first-child:hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/505577.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.D.row .body li:nth-child(2):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/2073679.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.D.row .body li:nth-child(3):hover ~ .bg{
+    background-image: url(https://wallpapercave.com/wp/wp2275187.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.D.row .body li:nth-child(4):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/2073695.jpg);
+    background-size: cover;
+    background-position: top;
+}
+/* e */
+.E.row .body li:first-child:hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/1710773.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.E.row .body li:nth-child(2):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/3793.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.E.row .body li:nth-child(3):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/1667339.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.E.row .body li:nth-child(4):hover ~ .bg{
+    background-image: url(https://wallpaperaccess.com/full/1667441.jpg);
+    background-size: cover;
+    background-position: center;
 }
